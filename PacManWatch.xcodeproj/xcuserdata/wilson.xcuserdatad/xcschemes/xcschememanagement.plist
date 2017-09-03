@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>PacManWatch WatchKit Extension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>PacManWatch.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -28,6 +33,11 @@
 			<true/>
 		</dict>
 		<key>C8B8DA4C1F5B55C400CD2D0A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C8B8DA5B1F5B55C400CD2D0A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

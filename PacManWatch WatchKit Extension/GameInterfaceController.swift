@@ -23,7 +23,7 @@ class GameInterfaceController: WKInterfaceController {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
         
-        let pickerItems: [WKPickerItem] = (0...10).map {
+        let pickerItems: [WKPickerItem] = (0...9).map {
             let pickerItem = WKPickerItem()
             pickerItem.contentImage = WKImage(imageName: "pacman-pos-\(($0) - 1)")
             return pickerItem
@@ -37,11 +37,11 @@ class GameInterfaceController: WKInterfaceController {
     }
     
     @IBAction func pickerSelectedItemChanged(value: Int) {
-        if value == 10 {
+        if value == 9 {
             pacmanSequencePicker.setSelectedItemIndex(1)
         }
         if value == 0 {
-            pacmanSequencePicker.setSelectedItemIndex(9)
+            pacmanSequencePicker.setSelectedItemIndex(8)
         }
     }
 }
