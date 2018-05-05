@@ -41,14 +41,55 @@
             <objects>
                 <controller id="iyi-1V-yhG" customClass="GameInterfaceController" customModule="PacManWatch_WatchKit_Extension">
                     <items>
-                        <picker width="64" height="64" alignment="center" verticalAlignment="center" style="sequence" id="MBk-Zc-2DK">
-                            <connections>
-                                <action selector="pickerSelectedItemChangedWithValue:" destination="iyi-1V-yhG" id="YM7-3E-e57"/>
-                            </connections>
-                        </picker>
+                        <group width="1" alignment="left" verticalAlignment="center" id="TwR-JZ-5nb">
+                            <items>
+                                <imageView width="40" height="40" alignment="center" contentMode="center" id="DNe-8G-6nM"/>
+                                <imageView width="40" height="40" alignment="center" contentMode="center" id="emc-7z-ekU"/>
+                                <imageView width="40" height="40" alignment="center" contentMode="center" id="Emh-SQ-exn"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" verticalAlignment="center" id="LpC-cC-YlB">
+                            <items>
+                                <imageView width="40" height="40" alignment="center" contentMode="center" id="lJx-oM-yeb"/>
+                                <picker width="40" height="40" alignment="center" verticalAlignment="center" style="sequence" id="MBk-Zc-2DK">
+                                    <connections>
+                                        <action selector="pickerSelectedItemChangedWithLetValue:" destination="iyi-1V-yhG" id="on0-qc-il8"/>
+                                    </connections>
+                                </picker>
+                                <imageView width="40" height="40" alignment="center" contentMode="center" id="3hZ-vy-rGk"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" verticalAlignment="center" id="cb7-eB-Axq">
+                            <items>
+                                <imageView width="40" height="40" alignment="center" contentMode="center" id="HZD-1I-bTH"/>
+                                <imageView width="40" height="40" alignment="center" contentMode="center" id="QIk-Jd-hGV"/>
+                                <imageView width="40" height="40" alignment="center" contentMode="center" id="LMS-bX-6HU"/>
+                            </items>
+                        </group>
+                        <separator alignment="left" verticalAlignment="bottom" id="yIY-qz-zin"/>
+                        <group alignment="center" verticalAlignment="bottom" id="wgr-7L-QVe">
+                            <items>
+                                <label alignment="left" text="SCORE:" id="9fd-U8-O8Q">
+                                    <color key="textColor" red="0.83005298168205721" green="0.83827132803534488" blue="0.83827132803534488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" weight="black" pointSize="11"/>
+                                </label>
+                                <label alignment="left" text="957" textAlignment="center" id="wkb-WQ-XSe">
+                                    <fontDescription key="font" type="system" weight="black" pointSize="11"/>
+                                </label>
+                            </items>
+                        </group>
                     </items>
                     <connections>
-                        <outlet property="pacmanSequencePicker" destination="MBk-Zc-2DK" id="jLZ-Dz-hHL"/>
+                        <outlet property="box_bottomcenter" destination="QIk-Jd-hGV" id="gWD-d2-N1s"/>
+                        <outlet property="box_bottomleft" destination="HZD-1I-bTH" id="eCr-e6-Hkk"/>
+                        <outlet property="box_bottomright" destination="LMS-bX-6HU" id="JL2-5o-Z60"/>
+                        <outlet property="box_centerleft" destination="lJx-oM-yeb" id="xKv-I9-nrv"/>
+                        <outlet property="box_centerright" destination="3hZ-vy-rGk" id="041-Wt-1RT"/>
+                        <outlet property="box_topcenter" destination="emc-7z-ekU" id="eyf-R0-G3i"/>
+                        <outlet property="box_topleft" destination="DNe-8G-6nM" id="siH-VO-wZ9"/>
+                        <outlet property="box_topright" destination="Emh-SQ-exn" id="mUr-tg-5Nn"/>
+                        <outlet property="pacmanSequencePicker" destination="MBk-Zc-2DK" id="pOq-mt-McQ"/>
+                        <outlet property="scoreLabel" destination="wkb-WQ-XSe" id="Gwg-2t-bxc"/>
                     </connections>
                 </controller>
             </objects>
